@@ -1,4 +1,4 @@
-=== Future Value Calculator by Calculator.iO ===
+=== Future Value Calculator ===
 Contributors: calculatorio
 Tags: future value, future value calculator, calculate future value, investment calculator, compound interest calculator, future investment, future savings, investment growth, investment future worth, financial planning
 Requires at least: 5.0
