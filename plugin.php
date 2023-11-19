@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Future Value Calculator by www.calculator.io
+Plugin Name: CI Future value calculator
 Plugin URI: https://www.calculator.io/future-value-calculator/
 Description: Free future value calculator that uses the formula FV = PV (1 + I/Y)n to find the future value of an investment with periodic deposits.
 Version: 1.0.0
