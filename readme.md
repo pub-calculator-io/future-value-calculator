@@ -7,7 +7,7 @@ Free future value calculator that uses the formula FV = PV (1 + I/Y)n to find th
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/future-value-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /future-value-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Future Value Calculator](https://www.calculator.io/future-value-calculator/ "Future Value Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
