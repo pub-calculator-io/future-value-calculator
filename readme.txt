@@ -7,7 +7,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Free future value calculator that uses the formula FV = PV (1 + I/Y)n to find the future value of an investment with periodic deposits.
+Free future value calculator that uses the formula FV = PV (1 + I/Y)ⁿ to find the future value of an investment with periodic deposits.
 
 [https://www.calculator.io/future-value-calculator/](https://www.calculator.io/future-value-calculator/)
 
@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Future Value Ca
 == Screenshots ==
 
 1. The Future Value Calculator Input Form.
-2. The Future Value Calculator Calculation Results.
 
 == Installation ==
 

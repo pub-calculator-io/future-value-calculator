@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <meta name="description" content="Free future value calculator that uses the formula FV &#x3D; PV (1 + I/Y)n to find the future value of an investment with periodic deposits.">
+    <meta name="description" content="Free future value calculator that uses the formula FV &#x3D; PV (1 + I/Y)ⁿ to find the future value of an investment with periodic deposits.">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-regular.woff2" as="font" crossorigin type="font/woff2">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-500.woff2" as="font" crossorigin type="font/woff2">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-600.woff2" as="font" crossorigin type="font/woff2">
@@ -83,14 +83,17 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
-                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script"></script>
+                	<script type="text/javascript" src="./assets/js/lib/chartjs/chart.min.js" id="chartjs_lib" defer></script>
+                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script" defer></script>
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -105,17 +108,16 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col">
 	<p class="table-cell table-cell--dark table-cell--only-title">Future Value</p>
 	<div class="table-cell table-cell--age table-cell--only row">
-		<div class="col chart__text">
-			<p class="result-text" id="fv">Future Value: $39,869.90</p>
-			<p class="result-text result-text--small-loan" id="pv">PV (Present Value): $12,431.62</p>
-			<p class="result-text result-text--small-loan" id="periods-result">N (Number of Periods): 20</p>
-			<p class="result-text result-text--small-loan" id="interest-result">I/Y (Interest Rate): 6</p>
-			<p class="result-text result-text--small-loan" id="deposit-result">PMT (Periodic Deposit): $200.00</p>
+		<div class="col chart__text animate">
+			<p class="result-text" id="fv">Future Value (FV): $39,869.90</p>
+			<p class="result-text result-text--small-loan" id="pv">Present Value (PV): $12,431.62</p>
+			<p class="result-text result-text--small-loan" id="periods-result">Number of Periods (N): 20</p>
+			<p class="result-text result-text--small-loan" id="interest-result">Interest Rate (I/Y): 6</p>
+			<p class="result-text result-text--small-loan" id="deposit-result">Periodic Deposit (PMT): $200.00</p>
 			<p class="result-text result-text--small-loan" id="start-amount-result">Starting Amount: $10,000.00</p>
 			<p class="result-text result-text--small-loan" id="total-deposit">Total Periodic Deposits: $4,000.00</p>
 			<p class="result-text result-text--small-loan" id="total-interest">Total Interest: $25,869.90</p>
@@ -149,7 +151,7 @@
 			<table class="result-table">
 				<thead>
 				<tr>
-					<th class="indigo text-center">№</th>
+					<th class="indigo text-center">#</th>
 					<th class="indigo">BEGINNING BALANCE</th>
 					<th class="indigo">DEPOSIT</th>
 					<th class="indigo">INTEREST</th>

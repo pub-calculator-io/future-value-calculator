@@ -24,11 +24,11 @@ function calculate(){
 	const startPrincipalPercent = principal / totalBalance * 100;
 	changeChartData([roundTo(startPrincipalPercent, 0), roundTo(depositPercent, 0), roundTo(interestPercent, 0)]);
 	const pv = calculatePresentValue(totalBalance, interest / 100, periods);
-	output.val('Future Value: $39,869.90').replace('$39,869.90', currencyFormat(totalBalance)).set('fv');
-	output.val('PV (Present Value): $12,431.62').replace('$12,431.62', currencyFormat(pv)).set('pv');
-	output.val('N (Number of Periods): 20').replace('20', periods).set('periods-result');
-	output.val('I/Y (Interest Rate): 6').replace('6', interest).set('interest-result');
-	output.val('PMT (Periodic Deposit): $200.00').replace('$200.00', currencyFormat(deposit)).set('deposit-result');
+	output.val('Future Value (FV): $39,869.90').replace('$39,869.90', currencyFormat(totalBalance)).set('fv');
+	output.val('Present Value (PV): $12,431.62').replace('$12,431.62', currencyFormat(pv)).set('pv');
+	output.val('Number of Periods (N): 20').replace('20', periods).set('periods-result');
+	output.val('Interest Rate (I/Y): 6').replace('6', interest).set('interest-result');
+	output.val('Periodic Deposit (PMT): $200.00').replace('$200.00', currencyFormat(deposit)).set('deposit-result');
 	output.val('Starting Amount: $10,000.00').replace('$10,000.00', currencyFormat(principal)).set('start-amount-result');
 	output.val('Total Periodic Deposits: $4,000.00').replace('$4,000.00', currencyFormat(totalDeposit)).set('total-deposit');
 	output.val('Total Interest: $25,869.90').replace('$25,869.90', currencyFormat(totalInterest)).set('total-interest');
