@@ -1,6 +1,6 @@
 # Future Value Calculator Widget for WordPress
 
-Free future value calculator that uses the formula FV = PV (1 + I/Y)ⁿ to find the future value of an investment with periodic deposits.
+Calculate the future worth of your investments with our free Future Value Calculator. Easily project savings, compound interest, and periodic deposits.
 
 ![Future Value Calculator Input Form](/assets/images/screenshot-1.png "Future Value Calculator Input Form")
 
@@ -11,8 +11,8 @@ Free future value calculator that uses the formula FV = PV (1 + I/Y)ⁿ to find 
 3. Activate the [Future Value Calculator](https://www.calculator.io/future-value-calculator/ "Future Value Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 ## Usage
-* Add the shortcode `[ci_future_value_calculator]` to your page, post or sidebar.
-* Or add the following code: `<?php display_ci_future_value_calculator(); ?>` to your template where you would like the Future Value Calculator to appear.
+* Add the shortcode `[calcio_future_value_calculator]` to your page, post or sidebar.
+* Or add the following code: `<?php display_calcio_future_value_calculator(); ?>` to your template where you would like the Future Value Calculator to appear.
 
 ## Libraries in Use
 1. https://mathjs.org/
